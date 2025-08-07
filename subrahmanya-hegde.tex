@@ -1,6 +1,7 @@
 %-------------------------
 % Resume in Latex
-% Author : Subrahmanya Hegde
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
 
@@ -38,8 +39,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
 
 %-------------------------
 % Custom commands
@@ -81,17 +82,17 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Subrahmanya Hegde}} & Email : \href{mailto:subbu.v.h.234@gmail.com}{subbu.v.h.234@gmail.com}\\
-  \href{https://github.com/Subrahmanya-Hegde}{github.com/Subrahmanya-Hegde} & Mobile : +91 9483680652 \\
+  \textbf{\Large Subrahmanya Hegde} & Email: \href{mailto:subbu.v.h.234@gmail.com}{subbu.v.h.234@gmail.com} \\
+  \href{https://github.com/Subrahmanya-Hegde}{Github.com/Subrahmanya-Hegde} & Mobile: +919483680652 \\
 \end{tabular*}
 
 %-----------SUMMARY-----------------
 \section{Summary}
-Experienced Backend and Full Stack Engineer with 6 years of expertise in building scalable web applications and microservices using Java, Spring Boot, Dropwizard, Angular, and AWS. Proven ability to collaborate with cross-functional teams and deliver solutions aligned with business needs in Agile, fast-paced environments. Skilled in backend-heavy system design, database development, and cloud-native architecture.
+Experienced Backend Engineer with 6 years of experience building scalable microservices and cloud-native systems using Java, Spring Boot, and AWS. Skilled in system integration, data streaming, infrastructure optimization, and production-grade observability in Agile environments.
 
 \section{Programming Skills}
  \resumeItemListStart
-    \resumeItem{Tech stack}{Java, Python, SQL, Typescript, Angular, C++, Springboot, JPA, MySQL, SQL Server, Redis, DynamoDB, Gradle, Maven, CI/CD, Docker, Kubernetes, Sonar, Linux, Git, Jira, Grafana, AWS, Kinesis}
+    \resumeItem{Tech stack}{Java, Python, SQL, Typescript, C++, Angular, Springboot, MySQL, SQL Server, Redis, DynamoDB, Gradle, Maven, Docker, Kubernetes, CI/CD, Sonar, Linux, Git, Jira, Grafana, AWS, Kinesis}
 \resumeItemListEnd
 
 %-----------EXPERIENCE-----------------
@@ -103,16 +104,14 @@ Experienced Backend and Full Stack Engineer with 6 years of expertise in buildin
       {Software Engineer 3 - Backend}{July 2024 - Present}
       \resumeItemListStart
         \resumeItem{Customer Profile Migration}
-        {Contributed to the phased migration of customer profile data from a third-party vendor to an in-house platform, implementing data synchronization logic to ensure system integrity without disruption. Built robust fallbacks to vendor services to handle temporary sync issues, ensuring high availability and resilience during the transition period.}
-        \resumeItem{Service Integration and Security Enhancements}
-        {Collaborated with internal teams to enable smooth switching from vendor APIs to internal services with minimal code changes. Also contributed to enhancing the security of certain updates from CRM services.}
+        {Contributed to the phased migration of customer profile data from a third-party vendor to an in-house platform, implementing data synchronization logic to ensure system integrity without disruption. Built robust fallbacks to vendor services to handle temporary sync issues, ensuring high availability and resilience during the transition period. Assisted integration teams during the switchover.}
         \resumeItem{Grafana Observability}
-        {Developed Grafana dashboards in the reconciliation service to visualize mismatched attribute fields during the sync phase. These dashboards reduced direct database access to sensitive PII production data by surfacing stored reports in a visual format.}
+        {Developed Grafana dashboards in the reconciliation service to visualize mismatched attribute fields during the sync phase. These dashboards reduced direct database access to sensitive PII production data by visualizing stored reports instead of querying production DBs.}
         \resumeItem{Infrastructure Cleanup}
           {Optimized cloud footprint by decommissioning redundant AWS and Kubernetes resources after successful Kafka migration.}
       \resumeItemListEnd
       
-      Tech Stack - Java (8, 17, 21), Spring Boot, Cucumber, Maven, AWS, DynamoDB, Kafka, Kinesis, S3, Terragrunt, Docker, K8s, Istio, CI/CD, Sonar, Grafana, Jaeger
+      Tech Stack - Java (8, 17, 21), Spring Boot, Cucumber, Kafka, Avro, Maven, AWS, DynamoDB, Kinesis, S3, Terragrunt, Docker, K8s, Istio, Jaeger
 
     \resumeSubheading
       {Wissen Technology—Flipkart}{Bangalore, India}
@@ -121,14 +120,11 @@ Experienced Backend and Full Stack Engineer with 6 years of expertise in buildin
         \resumeItem{Self Serve Feature}
           {This feature enabled the partners to purchase the Plans and Ads in partner dashboard by making the online payment. Involved from designing till release.}
         \resumeItem{Debian Upgrade}
-          {Migration of VMs and docker images from debian 9 which was reached end of life to debain 11. Here I migrated some of the critical services like Redis cluster and some services to new versions of VMs with zero downtime}
-        \resumeItem{Vulnerability Fixes}
-          {Vulnerability fixes for all the services owned by us based on the CVSS score}
+          {Migration of VMs and docker images from Debian 9 which was reached end of life to Debian 11. Here I migrated some of the critical services like Redis cluster and some services to new versions of VMs with zero downtime}
         \resumeItem{Partner Support}
-          {Building the support feature for partners using which they can reachout to Flipkart via proper channel. It enabled us to track the issues properly and give the resolution in a proper manner based on some SLAs and reduced the on-call escalations}
+          {Building the support feature for partners using which they can reach out to Flipkart via proper channel. It enabled us to track the issues properly and give the resolution in a proper manner based on some SLAs and reduced the on-call escalations}
       \resumeItemListEnd
-      
-      Tech Stack - Java 8, Python, Spring Boot, Dropwizard, Guice, Hibernate, JPA, Hystrix, MySQL, Redis, Docker, K8s, on-premise, Linux, nginx, Quartz, CI/CD, Sonar, Grafana, ELK
+      Tech Stack - Java 8, Python, MySQL, Redis, Spring Boot, Dropwizard, Guice, Hystrix, Docker, K8s, Linux, nginx, Quartz, ELK, Messaging
       
     \resumeSubheading
       {Mindtree LTD}{Bangalore, India}
@@ -137,9 +133,9 @@ Experienced Backend and Full Stack Engineer with 6 years of expertise in buildin
         \resumeItem{Dashboards}
           {Built multiple dashboards for Toyota in GSPIMS. A global application used by Toyota and its suppliers to coordinate projects, parts, surveys, risk assessment etc related to global Toyota supplier chain}
         \resumeItem{Data Ingestion}
-        {Worked on developing and maintaining ADF pipelines and the underlying jobs for parta related data ingestion from different systems.}
+        {Worked on developing and maintaining ADF pipelines and the underlying jobs for parts-related data ingestion from different systems.}
       \resumeItemListEnd
-      Tech Stack - Java 8, Spring Boot, JPA, SQL Server, SQL Views, Stored procedures, Angular 8, Ag-Grid, TypeScript, Azure, Azure Data Factory, 
+      Tech Stack - Java 8, Spring Boot, SQL Server, Angular 8, Ag-Grid, TypeScript, Azure, ADF 
 
   \resumeSubHeadingListEnd
   
